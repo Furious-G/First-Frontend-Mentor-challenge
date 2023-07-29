@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'
+        type='text/css'>
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            color: hsl(0, 0%, 42%);
+        }
+
+        .attribution a {
+            color: hsl(0, 0%, 53%);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <main>
+            <div class="image">
+                <img src="assets/images/illustration-sign-up-desktop.svg" class="desktop">
+                <img src="assets/images/illustration-sign-up-mobile.svg" class="mobile">
+
+            </div>
+            <div class="signup">
+                <!-- Sign-up form start -->
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+                <ul>
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And much more!</li>
+                </ul>
+                <div class="res">
+                    <span>Email address </span>
+                    <span id="response"></span>
+                </div>
+                <form action="thanks.html" method="get" novalidate>
+                    <input type="email" name="email" required placeholder="email@company.com">
+                    <button type="submit">Subscribe to monthly newsletter</button>
+
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <div class="attribution desktop">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Furious</a>.
+    </div>
+
+    <script src="assets/scripts.js">
+    </script>
+</body>
+
+</html>

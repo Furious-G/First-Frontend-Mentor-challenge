@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'
+        type='text/css'>
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container thanks">
+        <main class="thankYou">
+            <div>
+                <img src="assets/images/icon-success.svg">
+                <h1>Thanks for subscribing!</h1>
+                <p>A confirmation email has been sent to <span id="emailVar">emil</span>
+                    Please open it and click the button inside to confirm your subscription.
+                </p>
+            </div>
+            <div>
+                <button>Dismiss message</button>
+            </div>
+        </main>
+    </div>
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get('email');
+        document.getElementById("emailVar").innerHTML = email;
+    </script>
+</body>
+
+</html>

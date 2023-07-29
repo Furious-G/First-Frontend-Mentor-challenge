@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: hsl(236, 27%, 20%);
+  height: 100vh;
+}
+
+img {
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 900px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  gap: 20px;
+}
+
+main.thankYou {
+  display: block;
+  width: 460px;
+  padding: 50px 60px;
+}
+
+.thankYou img {
+  margin-bottom: 40px;
+  display: block;
+}
+
+.thankYou p {
+  margin-bottom: 40px;
+}
+
+#emailVar {
+  font-weight: 700;
+}
+h1 {
+  font-size: 3.2rem;
+  margin: 0 0 25px 0;
+  color: hsl(236, 27%, 20%);
+  line-height: 1em;
+}
+
+.signup {
+  padding: 40px;
+}
+
+ul {
+  list-style: none;
+  margin: 30px 0 20px 0;
+  padding: 0;
+}
+
+.res {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+ul > li {
+  padding-block-end: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  background: url("/assets/images/icon-list.svg");
+  background-size: cover;
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  margin-block: 10px;
+  border-radius: 8px;
+  border: solid 1px #888;
+}
+
+button {
+  display: block;
+  margin-block: 15px;
+  width: 100%;
+  color: #fff;
+  padding: 15px;
+  background: hsl(236, 27%, 20%);
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  color: #fff;
+  background: #ff5476;
+  background: -moz-linear-gradient(left, #ff5476 0%, #ff673e 100%);
+  background: -webkit-linear-gradient(left, #ff5476 0%, #ff673e 100%);
+  background: linear-gradient(to right, #ff5476 0%, #ff673e 100%);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 7px 17px 6px rgba(255, 84, 118, 0.34);
+  box-shadow: 0px 7px 17px 6px rgba(255, 84, 118, 0.34);
+}
+
+.res {
+  display: flex;
+  justify-content: space-between;
+}
+
+#response {
+  color: tomato;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 620px) {
+  main {
+    display: block;
+    padding: 0;
+    border-radius: 0;
+  }
+  .container {
+    height: auto;
+  }
+  .container.thanks,
+  main.thankYou {
+    height: 100%;
+  }
+
+  main.thankYou {
+    padding: 120px 30px 30px 30px;
+  }
+
+  main.thankYou > div:last-of-type {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
