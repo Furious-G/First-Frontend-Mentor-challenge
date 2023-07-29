@@ -85,7 +85,7 @@ ul > li {
 
 li::before {
   content: "";
-  background: url("/assets/images/icon-list.svg");
+  background: url("images/icon-success.svg");
   background-size: cover;
   display: block;
   width: 20px;
